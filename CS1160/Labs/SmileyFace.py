@@ -30,6 +30,6 @@ print("++++++++++++++++")
 #     "++++++++++++++++"
 # ]
 
-# # Use a For-Loop to iterate through the pattern and print to output
+# Use a For-Loop to iterate through the pattern and print to output
 # for line in pattern:
 #     print(line)
