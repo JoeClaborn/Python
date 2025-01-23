@@ -5,7 +5,7 @@ print("Hello World... again!")
 print("5,000") # I print 5,000 here because I like the number
 print('Please enter your name: ')
 # print('My dog\'s name is Buddy')
-print("The man said "Hello!" and then walked away")
+print("The man said Hello! and then walked away")
 
 firstName = "Max"
 FirstName = "Jack"
@@ -23,4 +23,3 @@ print(firstName)
 print(FirstName)
 print(age0)
 print(lastName, firstName)
-
