@@ -1,5 +1,10 @@
 # Joe Claborn - CS1160 - Lab 03
 
+# This program takes 5 grades from the user's input and
+# takes the average of the grade to 2 decimal places then
+# uses it to check the average grade to determine what letter
+# grade that the user will get in their class
+
 # Print welcome statement
 print("Welcome to the grade estimator.")
 
