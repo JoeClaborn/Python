@@ -1,5 +1,10 @@
 # Joe Claborn - CS1160 - Lab 04 - Part 1
 
+# This program is a grade estimator that loops through the grades that the user inputs
+# until a 'n' is entered. Once an 'n' is entered by the user, the program gets the
+# average grade of all the grades entered, outputs it for the user and informs the
+# user of what letter grade they will obtain in their class.
+
 # Print welcome statement
 print("Welcome to the grade estimator.")
 
