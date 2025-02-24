@@ -63,7 +63,7 @@ while (userInput != "q") :
         modulo_nums(firstNum, secondNum)
         userInput = input("Enter the mathematical operation [a, s, m, d, o, q]: ")
     # If the user input is anything other than [a, s, m, d, o, q] then print that the input is invalid
-    # and ask the user for a mathematical operator again (repeat until valid)
+    # and ask the user for a mathematical operator again (repeat until valid).
     else :
         print("Invalid input!")
         userInput = input("Enter the mathematical operation [a, s, m, d, o, q]: ")
