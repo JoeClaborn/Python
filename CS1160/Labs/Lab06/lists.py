@@ -35,11 +35,11 @@ def remove_item(my_list, item) :
 def sort_list(my_list) :
     my_list.sort()
 
-# Create empty list
+# Create an empty list.
 my_list = []
-# Welcome the user and show the options of the program
+# Welcome the user and show the options of the program.
 print("Welcome to The List Program\nA - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-# Allow the user to input their choice
+# Allow the user to input their choice.
 choice = input("Enter your choice: ")
 
 # While the user input is not 'Q', iterate through the options as the user sees fit and based on what they would like to do to
@@ -71,10 +71,10 @@ while (choice != 'Q') :
         print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
         choice = input("Enter your choice: ")
     else :
-        # If the user's choice is not within the valid options, tell the user and allow them to choose a valid option
+        # If the user's choice is not within the valid options, tell the user and allow them to choose a valid option.
         print(f"{choice} is not a valid choice!")
         print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
         choice = input("Enter your choice: ")
 
-# Tell the user thank you for their interest in the program
+# Tell the user thank you for their interest in the program.
 print("Thanks for using The List Program")
