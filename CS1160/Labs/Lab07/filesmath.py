@@ -1,5 +1,8 @@
 # Joe Claborn - CS1160 - Lab 07
 
+import os
+os.chdir("C:\\Users\\josep\\OneDrive\\Desktop\\Python\\CS1160\\Labs\\Lab07\\")
+
 # Function definitions for each math operation that the user can choose from.
 def add_nums(firstNum, secondNum) :
     result = firstNum + secondNum
@@ -24,7 +27,7 @@ def mod_nums(firstNum, secondNum) :
 def input_file(filename) :
     try :
         myFile = open(filename, 'r')
-        outputFile = open("output.txt","w")
+        outputFile = open("output.txt",'w')
 
         while True :
             operation = myFile.readline().strip()
@@ -69,7 +72,7 @@ while (userInput != "q") :
     if userInput in ['a', 's', 'm', 'd', 'o']:
         firstNum = float(input("Enter the first number in the operation: "))
         secondNum = float(input("Enter the second number in the operation: "))
-   
+
         if userInput == "a":
             add_nums(firstNum, secondNum)
         elif userInput == "s":
