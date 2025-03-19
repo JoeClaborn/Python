@@ -35,46 +35,50 @@ def remove_item(my_list, item) :
 def sort_list(my_list) :
     my_list.sort()
 
-# Create an empty list.
-my_list = []
-# Welcome the user and show the options of the program.
-print("Welcome to The List Program\nA - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-# Allow the user to input their choice.
-choice = input("Enter your choice: ")
+def main() :
+    # Create an empty list.
+    my_list = []
+    # Welcome the user and show the options of the program.
+    print("Welcome to The List Program\nA - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+    # Allow the user to input their choice.
+    choice = input("Enter your choice: ")
 
-# While the user input is not 'Q', iterate through the options as the user sees fit and based on what they would like to do to
-# the list with the given options. Depending on the user's choice, call that function and do what is asked by the user.
-while (choice != 'Q') :
-    if (choice == 'A' ) :
-        item = input("Enter a string to append to the list: ")
-        append_item(my_list, item)
-        print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-        choice = input("Enter your choice: ")
-    elif (choice == 'I') :
-        item = input("Enter a string to insert into the list: ")
-        index = int(input("Enter an index to insert at: "))
-        insert_item(my_list, item, index)
-        print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-        choice = input("Enter your choice: ")
-    elif (choice == 'P') :
-        print_list(my_list)
-        print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-        choice = input("Enter your choice: ")
-    elif (choice == 'R') :
-        item = input("Enter a string to remove from the list: ")
-        remove_item(my_list, item)
-        print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-        choice = input("Enter your choice: ")
-    elif (choice == 'S') :
-        sort_list(my_list)
-        print("The list is now sorted!")
-        print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-        choice = input("Enter your choice: ")
-    else :
-        # If the user's choice is not within the valid options, tell the user and allow them to choose a valid option.
-        print(f"{choice} is not a valid choice!")
-        print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
-        choice = input("Enter your choice: ")
+    # While the user input is not 'Q', iterate through the options as the user sees fit and based on what they would like to do to
+    # the list with the given options. Depending on the user's choice, call that function and do what is asked by the user.
+    while (choice != 'Q') :
+        if (choice == 'A' ) :
+            item = input("Enter a string to append to the list: ")
+            append_item(my_list, item)
+            print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+            choice = input("Enter your choice: ")
+        elif (choice == 'I') :
+            item = input("Enter a string to insert into the list: ")
+            index = int(input("Enter an index to insert at: "))
+            insert_item(my_list, item, index)
+            print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+            choice = input("Enter your choice: ")
+        elif (choice == 'P') :
+            print_list(my_list)
+            print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+            choice = input("Enter your choice: ")
+        elif (choice == 'R') :
+            item = input("Enter a string to remove from the list: ")
+            remove_item(my_list, item)
+            print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+            choice = input("Enter your choice: ")
+        elif (choice == 'S') :
+            sort_list(my_list)
+            print("The list is now sorted!")
+            print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+            choice = input("Enter your choice: ")
+        else :
+            # If the user's choice is not within the valid options, tell the user and allow them to choose a valid option.
+            print(f"{choice} is not a valid choice!")
+            print("A - Append Item to End of List\nI - Insert Item into List\nP - Print Entire List\nR - Remove Item from List\nS - Sort List\nQ - Quit")
+            choice = input("Enter your choice: ")
 
-# Tell the user thank you for their interest in the program.
-print("Thanks for using The List Program")
+    # Tell the user thank you for their interest in the program.
+    print("Thanks for using The List Program")
+
+if __name__ == "__main__":
+    main()
