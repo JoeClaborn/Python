@@ -74,7 +74,7 @@ def main():
         # Put your pickle load code here (with exception handling)
         if os.path.exists("todo.pickle"):
             with open("todo.pickle", "rb") as f:
-                pickle.load(f)
+                library = pickle.load(f)
         else:
             print("Error Loading Library")
 
