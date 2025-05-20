@@ -1,5 +1,4 @@
 import math
-import my_script
 
 ##def main():
 ##
@@ -54,7 +53,6 @@ if __name__ == "__main__":
     main()
 
 import math
-import my_script
 
 ##def main():
 ##

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class GroceryStore:
 
     def __init__(self, name):
@@ -83,7 +82,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
+
 class GroceryStore:
 
     def __init__(self, name):
@@ -168,4 +167,3 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> 0bbfd1684901d0e83ffcbb9b34c1d45876c2c81b
